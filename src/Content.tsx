@@ -1,6 +1,6 @@
 type ContentType = {
     text1: string
-    text2: string
+    text2?: string
 }
 
 const Content = (props: ContentType) => {
