@@ -1,9 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import {Title} from './Title'
-
-// with JSX
-//PascalCase - назва починаеться з великої букви (викликається як тег)
+import Title from './Title'
 
 const Content = () => {
     return (
@@ -28,7 +25,8 @@ const Content = () => {
 const App = () => {
     return (
         <>
-            <Title />
+            <Title title="React" year={2023} />
+            <Title title="App" year={2022} />
             <Content />
         </>
     )
