@@ -1,18 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import Title from './Title'
-
-// const title = React.createElement(
-//     'h1',
-//     {
-//         id: 'title',
-//         className: 'red',
-//     },
-//     React.createElement('div', null, 'test')
-// )
+import {Title} from './Title'
 
 // with JSX
-
 //PascalCase - назва починаеться з великої букви (викликається як тег)
 
 const Content = () => {
