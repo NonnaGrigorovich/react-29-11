@@ -1,5 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
+import Title from './Title'
 
 // const title = React.createElement(
 //     'h1',
@@ -13,10 +14,6 @@ import ReactDOM from 'react-dom/client'
 // with JSX
 
 //PascalCase - назва починаеться з великої букви (викликається як тег)
-
-const Title = () => {
-    return <h1>Hello App component</h1>
-}
 
 const Content = () => {
     return (
