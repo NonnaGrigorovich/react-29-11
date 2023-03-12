@@ -1,9 +1,10 @@
-import Header from "../Header/Header"
-import Main from "../Main/Main"
-import Footer from "../Footer/Footer"
+import Header from "container/Header/Header"
+import Main from "container/Main/Main"
+import Footer from "container/Footer/Footer"
 
 // tsrafce - швидкий виклик
 type Props = {}
+
 const App = (props: Props) => {
   return (
     <div>
@@ -13,4 +14,5 @@ const App = (props: Props) => {
     </div>
   )
 }
+
 export default App
