@@ -8,12 +8,12 @@ type Props = {}
 
 const App = (props: Props) => {
   return (
-    <div>
+    <>
         <CssBaseline />
         <Header />
         <Main />
         <Footer />
-    </div>
+    </>
   )
 }
 
