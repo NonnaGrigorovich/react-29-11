@@ -1,30 +1,21 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
+import Title from './Title'
+import Content from './Content'
 
-// const title = React.createElement(
-//     'h1',
-//     {
-//         id: 'title',
-//         className: 'red',
-//     },
-//     React.createElement('div', null, 'test')
-// )
-
-// with JSX
-const title = <h1 className="red">Test</h1>
-
-const list = (
-    <ul>
-        <li>List item 1</li>
-        <li>List item 2</li>
-        <li>List item 3</li>
-    </ul>
-)
-
-const content = <div>
-  {title}
-  {list}
-</div>
+const App = () => {
+    return (
+        <>
+            <Title title="React" year={2023} />
+            <Title title="App" year={2022} />
+            <Content text1="Hello world text1" />
+        </>
+    )
+}
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
-root.render(<React.StrictMode>{content}</React.StrictMode>)
+root.render(
+    <React.StrictMode>
+        <App />
+    </React.StrictMode>
+)
