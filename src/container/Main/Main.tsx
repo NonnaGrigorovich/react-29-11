@@ -10,7 +10,7 @@ const Main = (props: Props) => {
                 padding: '40px 0',
             }}
         >
-            <Home/>
+            <Home />
         </Container>
     )
 }
