@@ -20,8 +20,8 @@ const ProductList = (props: Props) => {
             </Typography>
 
             <Grid container spacing={4}>
-                {productsArray.map(({title, description, type, capacity, price}, i) => (
-                    <Grid item xs={12} sm={4} key={i}>
+                {productsArray.map(({id, title, description, type, capacity, price}, ) => (
+                    <Grid item xs={12} sm={4} key={id}>
                         <ProductListItem
                             title={title}
                             description={description}
