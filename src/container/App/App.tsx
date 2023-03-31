@@ -7,6 +7,7 @@ import { Container } from '@mui/material'
 import Home from 'pages/Home/Home'
 import { Route, Routes } from 'react-router-dom'
 import CartPage from 'pages/Cart/CartPage'
+import { omit } from 'lodash'
 
 // tsrafce - швидкий виклик
 type Props = {}
@@ -29,20 +30,13 @@ const App = (props: Props) => {
     }
 
     const removeProductFromCart = (id: number) => {
-        setProductsInCart((prevState) => {
-            let prevProductsInCart = { ...prevState }
-            delete prevProductsInCart[id]
-            return prevProductsInCart
-        })
+        setProductsInCart((prevState) => omit(prevState, id))
     }
 
     return (
         <StyledEngineProvider injectFirst>
             <CssBaseline />
             <Header productsInCart={productsInCart} />
-            <button onClick={() => removeProductFromCart(1)}>
-                Remove product
-            </button>
             <Container
                 sx={{
                     padding: '40px 0',
