@@ -11,7 +11,11 @@ type Props = {
     changeProductQuantity: (id: number, count: number) => void
 }
 
-const CartPage = ({ productsInCart, removeProductFromCart, changeProductQuantity}: Props) => {
+const CartPage = ({
+    productsInCart,
+    removeProductFromCart,
+    changeProductQuantity,
+}: Props) => {
     return (
         <>
             <Typography variant="h4" component={'h1'} sx={{ margin: 0 }}>
