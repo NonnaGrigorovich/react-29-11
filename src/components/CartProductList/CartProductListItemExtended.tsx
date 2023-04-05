@@ -11,8 +11,6 @@ import { removeproductFromCart, changeProductQuantity } from 'redux/cartReducer'
 type Props = {
     product: Product
     productCount: number
-    removeProductFromCart?: (id: number) => void
-    changeProductQuantity?: (id: number, count: number) => void
 }
 
 const CartProductListItemExtended = ({ product, productCount }: Props) => {
