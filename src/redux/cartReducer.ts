@@ -5,10 +5,7 @@ type ProductsInCartType = {
     [id: number]: number
 }
 
-const initialState: ProductsInCartType ={
-    1: 3,
-    2: 3,
-}
+const initialState: ProductsInCartType ={}
 
 export const cartSlice = createSlice({
     name: 'productsInCart',
